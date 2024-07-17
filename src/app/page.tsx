@@ -187,7 +187,6 @@ export default function Home() {
 
 
 
-{/* // Export the Footer component so it can be used in other parts of the app */}
     </main>
   );
 }
