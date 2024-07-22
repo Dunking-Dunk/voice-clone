@@ -1,5 +1,7 @@
+"use client"
 import Link from 'next/link';
 import Image from 'next/image';
+import { Button } from '../ui/button';
 import { MenuIcon } from 'lucide-react';
 
 
@@ -32,6 +34,12 @@ const Header = () => {
                 </ul>
             </nav>
             <aside className="flex items-center gap-4">
+
+                <Link href="/signin">
+                    <Button variant={'secondary'}>
+                        Login
+                    </Button>
+                </Link>
                 <Link
                     href="/dashboard"
                     className="relative inline-flex h-10 overflow-hidden rounded-full p-[2px] focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50"
@@ -46,7 +54,7 @@ const Header = () => {
                 } */}
                 <MenuIcon className="md:hidden" />
             </aside>
-        </header>
+        </header >
     )
 }
 
